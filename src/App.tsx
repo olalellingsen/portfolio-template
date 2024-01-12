@@ -3,9 +3,8 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Music from "./pages/Music";
-
 import Footer from "./components/Footer";
-import Concerts from "./components/Calendar";
+import Calendar from "./components/Calendar";
 
 function App() {
   return (
@@ -15,7 +14,7 @@ function App() {
         <Home id="home" />
         <About id="about" />
         <Music id="music" />
-        <Concerts id="concerts" />
+        <Calendar id="calendar" />
       </div>
       <Footer id="footer" />
     </div>

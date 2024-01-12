@@ -83,7 +83,7 @@ function Concerts({ id }: Props) {
 
   return (
     <div id={id}>
-      <h2>Kommende konserter:</h2>
+      <h2>Upcoming events</h2>
       <div className="grid gap-4 md:grid-cols-2 mt-2 mx-auto 2xl:w-2/3">
         {upcomingEvents.map((event) => (
           <Event {...event} />
@@ -93,14 +93,12 @@ function Concerts({ id }: Props) {
         <button onClick={() => setShowPast(!showPast)} className="flex">
           {showPast ? (
             <>
-              <h2 className="underline">Tidligere konserter</h2>
+              <h2 className="underline">Past events</h2>
               <ArrowDown height={35} />
             </>
           ) : (
             <>
-              <h2 className="flex underline hover:mr-1">
-                Vis tidligere konserter
-              </h2>
+              <h2 className="flex underline hover:mr-1">Show past events</h2>
               <ArrowRight height={35} />
             </>
           )}

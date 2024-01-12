@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Menu } from "lucide-react";
 import { X } from "lucide-react";
 
-import logo from "../assets/logo.png";
+// import logo from "../assets/logo.png";
 import { Link } from "react-scroll";
 import SoMe from "./SoMe";
 
@@ -25,14 +25,12 @@ function Navbar() {
         <div className="flex">
           <Link to="home" smooth={true} duration={800} offset={-100}>
             <img
-              src={logo}
+              // src={logo}
               alt="logo"
               className="w-16 hover:scale-105 hover:cursor-pointer transition-transform"
             />
           </Link>
-          <h1 className="pt-3.5 px-4 hidden lg:flex">
-            Det Nye Norske Storband
-          </h1>
+          <h1 className="pt-3.5 px-4 hidden lg:flex">My Template</h1>
         </div>
         <div className="hidden sm:flex gap-8 p-4 text-lg">
           <Link
@@ -42,7 +40,7 @@ function Navbar() {
             offset={-100}
             className="navLink"
           >
-            Hjem
+            Home
           </Link>
           <Link
             to="about"
@@ -51,7 +49,7 @@ function Navbar() {
             offset={-100}
             className="navLink"
           >
-            Om oss
+            About
           </Link>
           <Link
             to="music"
@@ -60,16 +58,16 @@ function Navbar() {
             offset={-100}
             className="navLink"
           >
-            Musikk
+            Music
           </Link>
           <Link
-            to="concerts"
+            to="calendar"
             smooth={true}
             duration={800}
             offset={-100}
             className="navLink"
           >
-            Konserter
+            Calendar
           </Link>
           <Link
             to="footer"
@@ -78,7 +76,7 @@ function Navbar() {
             offset={-100}
             className="navLink"
           >
-            Kontakt
+            Contact
           </Link>
         </div>
         <div className="sm:hidden pt-2" onClick={() => setIsMenuOpen(true)}>
@@ -89,13 +87,13 @@ function Navbar() {
         <div className="fixed sm:hidden top-0 left-0 w-screen h-screen bg-primary">
           {/* logo and cross */}
           <div className="h-24 p-4 flex justify-between w-full">
-            <img src={logo} alt="logo" className="w-16" />
+            <img alt="logo" src="" className="w-16" /> {/* src={logo} */}
             <div className="flex justify-end pt-2">
               <X size={50} className="stroke-white" onClick={closeMenu} />
             </div>
           </div>
 
-          {/* mobile menu */}
+          {/* menu on mobile */}
           <div className="p-6 pt-0">
             <ul className="text-5xl text-white grid gap-3">
               <Link
@@ -104,7 +102,7 @@ function Navbar() {
                 className="hover:underline"
                 onClick={clickLink}
               >
-                Hjem
+                Home
               </Link>
               <Link
                 to="about"
@@ -112,7 +110,7 @@ function Navbar() {
                 className="hover:underline"
                 onClick={clickLink}
               >
-                Om oss
+                About
               </Link>
               <Link
                 to="music"
@@ -120,15 +118,15 @@ function Navbar() {
                 className="hover:underline"
                 onClick={clickLink}
               >
-                Musikk
+                Music
               </Link>
               <Link
-                to="concerts"
+                to="calendar"
                 offset={-100}
                 className="hover:underline"
                 onClick={clickLink}
               >
-                Konserter
+                Calendar
               </Link>
               <Link
                 to="footer"
@@ -136,7 +134,7 @@ function Navbar() {
                 className="hover:underline"
                 onClick={clickLink}
               >
-                Kontakt
+                Contact
               </Link>
             </ul>
           </div>

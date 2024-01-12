@@ -54,7 +54,7 @@ function Concert({
             <div className="flex gap-1">
               <Ticket />
               <a className="underline" href={ticketLink}>
-                Kjøp billetter
+                Tickets
               </a>
             </div>
           )}

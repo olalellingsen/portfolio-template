@@ -34,9 +34,10 @@ function Music({ id }: { id: string }) {
   }, [id]); // Add 'id' as a dependency to refetch data when 'id' changes
 
   return (
-    <div id={id} className="h-full grid gap-2">
+    <div id={id} className="h-screen border grid gap-2">
       {/* Albums */}
-      <h2>Album</h2>
+      <h1>Music</h1>
+      <h2>Albums</h2>
       <div className="grid gap-2 md:grid-cols-2 sm:gap-4">
         {albums.map((album) => (
           <iframe
