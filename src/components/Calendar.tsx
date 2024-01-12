@@ -82,7 +82,8 @@ function Concerts({ id }: Props) {
   }
 
   return (
-    <div id={id}>
+    <div id={id} className="h-screen border">
+      <h1>Events</h1>
       <h2>Upcoming events</h2>
       <div className="grid gap-4 md:grid-cols-2 mt-2 mx-auto 2xl:w-2/3">
         {upcomingEvents.map((event) => (

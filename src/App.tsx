@@ -6,6 +6,8 @@ import Music from "./pages/Music";
 import Footer from "./components/Footer";
 import Calendar from "./components/Calendar";
 
+// Remove the border and h-screen class for every page component
+
 function App() {
   return (
     <div className="bg-primaryBg">
